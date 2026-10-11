@@ -198,3 +198,21 @@ h1,h2{font-family:"Playfair Display",serif;letter-spacing:-.03em}
   .presentation-card h3{font-size:1.3rem}
   .related-publication{align-items:flex-start;flex-direction:column;gap:8px}
 }
+
+/* Conference slideshow */
+.conference-slider{position:relative}
+.conference-slides{position:relative}
+.conference-slide{animation:conferenceFade .35s ease}
+.conference-slide[hidden]{display:none!important}
+.conference-slider-controls{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:18px}
+.conference-arrow{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:1.15rem;cursor:pointer;transition:.2s ease}
+.conference-arrow:hover{transform:translateY(-1px);border-color:#a9bac6;box-shadow:0 7px 18px rgba(16,32,45,.08)}
+.conference-dots{display:flex;align-items:center;gap:9px}
+.conference-dot{width:9px;height:9px;border-radius:999px;border:0;background:#c5ced5;padding:0;cursor:pointer;transition:.2s ease}
+.conference-dot.active{width:28px;background:var(--accent)}
+@keyframes conferenceFade{from{opacity:.15;transform:translateX(8px)}to{opacity:1;transform:none}}
+.conference-gallery-tip figure:nth-child(3) img{object-fit:contain;background:#fff}
+@media(max-width:620px){
+  .conference-slider-controls{margin-top:14px}
+  .conference-arrow{width:38px;height:38px}
+}
