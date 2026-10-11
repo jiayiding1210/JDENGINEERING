@@ -141,3 +141,60 @@ h1,h2{font-family:"Playfair Display",serif;letter-spacing:-.03em}
   .integration-image-wrap{width:118%;margin-left:-9%}
   .profile-info{padding:18px}
 }
+
+/* Conferences */
+.conferences-preview{background:#fff}
+.conference-feature{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;text-decoration:none;color:inherit;box-shadow:0 12px 32px rgba(16,32,45,.05);transition:transform .2s ease,box-shadow .2s ease}
+.conference-feature:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(16,32,45,.09)}
+.conference-feature-image{min-height:360px;background:#e8edf1}
+.conference-feature-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+.conference-feature-copy{padding:38px;display:flex;flex-direction:column;justify-content:center}
+.conference-date{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:12px}
+.conference-feature-copy h3{font-size:1.8rem;line-height:1.18;margin:0 0 14px}
+.conference-feature-copy p{margin:0 0 20px;color:var(--muted)}
+.conference-link{color:var(--accent-deep);font-weight:800}
+
+/* Conference detail page */
+.subpage-hero{padding:72px 0 54px;background:linear-gradient(180deg,#fff 0%,#f3f7fa 100%)}
+.subpage-kicker{margin:0 0 16px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:800}
+.subpage-hero h1{font-size:clamp(2.6rem,5vw,4.6rem);line-height:1.04;margin:0 0 18px;max-width:900px}
+.subpage-lead{font-size:1.12rem;color:var(--muted);max-width:820px;margin:0}
+.conference-meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+.conference-meta-item{padding:18px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.conference-meta-item span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:800;margin-bottom:5px}
+.conference-meta-item strong{font-size:.96rem;line-height:1.4}
+.conference-gallery{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:14px;margin-top:30px}
+.conference-gallery figure{margin:0;border-radius:18px;overflow:hidden;background:#e8edf1;min-height:300px}
+.conference-gallery img{width:100%;height:100%;object-fit:cover}
+.presentation-list{display:grid;gap:24px;margin-top:30px}
+.presentation-card{border:1px solid var(--line);border-radius:20px;padding:30px;background:#fff;box-shadow:0 10px 26px rgba(16,32,45,.035)}
+.presentation-number{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:10px}
+.presentation-card h3{font-size:1.55rem;line-height:1.25;margin:0 0 16px}
+.presentation-card p{color:var(--muted);margin:0 0 16px}
+.presentation-card p:last-of-type{margin-bottom:0}
+.related-publications{display:grid;gap:14px;margin-top:26px}
+.related-publication{display:flex;justify-content:space-between;gap:24px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:18px 20px;text-decoration:none;color:var(--ink);background:#fff}
+.related-publication:hover{border-color:#afc0cc}
+.related-publication span{color:var(--accent);font-weight:800;white-space:nowrap}
+.back-link{display:inline-block;margin-bottom:20px;color:var(--accent-deep);text-decoration:none;font-weight:700}
+.back-link:hover{text-decoration:underline}
+@media(max-width:980px){
+  .conference-feature{grid-template-columns:1fr}
+  .conference-feature-image{min-height:320px}
+  .conference-meta-grid{grid-template-columns:1fr 1fr}
+  .conference-gallery{grid-template-columns:1fr 1fr}
+  .conference-gallery figure:first-child{grid-column:1/-1}
+}
+@media(max-width:620px){
+  .conference-feature-copy{padding:24px}
+  .conference-feature-copy h3{font-size:1.45rem}
+  .conference-feature-image{min-height:240px}
+  .subpage-hero{padding:42px 0 38px}
+  .subpage-hero h1{font-size:2.35rem}
+  .conference-meta-grid,.conference-gallery{grid-template-columns:1fr}
+  .conference-gallery figure:first-child{grid-column:auto}
+  .conference-gallery figure{min-height:220px}
+  .presentation-card{padding:22px}
+  .presentation-card h3{font-size:1.3rem}
+  .related-publication{align-items:flex-start;flex-direction:column;gap:8px}
+}
