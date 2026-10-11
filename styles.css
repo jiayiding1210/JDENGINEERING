@@ -216,3 +216,27 @@ h1,h2{font-family:"Playfair Display",serif;letter-spacing:-.03em}
   .conference-slider-controls{margin-top:14px}
   .conference-arrow{width:38px;height:38px}
 }
+
+/* Keep conference slideshow cards at a consistent size between slides */
+@media (min-width: 901px){
+  .conference-feature{height:390px}
+  .conference-feature-image{height:100%;min-height:0}
+  .conference-feature-copy{min-width:0;overflow:hidden}
+  .conference-feature-copy h3{min-height:2.36em;display:flex;align-items:flex-end}
+  .conference-feature-copy p{min-height:4.8em}
+}
+
+@media (max-width: 900px){
+  .conference-feature{height:620px;grid-template-rows:300px 1fr}
+  .conference-feature-image{height:300px;min-height:0}
+  .conference-feature-copy{min-height:0;overflow:hidden}
+  .conference-feature-copy h3{min-height:2.36em}
+  .conference-feature-copy p{min-height:4.8em}
+}
+
+@media (max-width: 600px){
+  .conference-feature{height:560px;grid-template-rows:220px 1fr}
+  .conference-feature-image{height:220px;min-height:0}
+  .conference-feature-copy h3{min-height:2.7em}
+  .conference-feature-copy p{min-height:6.2em}
+}
