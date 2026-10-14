@@ -246,3 +246,42 @@ h1,h2{font-family:"Playfair Display",serif;letter-spacing:-.03em}
 /* Inline detail links */
 .text-link{color:var(--accent-deep);font-weight:800;text-decoration:none}
 .text-link:hover{text-decoration:underline}
+
+/* About page */
+.about-hero .subpage-lead{max-width:900px}
+.about-intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.about-lead-prose{font-size:1.06rem}
+.about-section-heading{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:end;margin-bottom:34px}
+.about-strength-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.about-strength-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 10px 28px rgba(16,32,45,.035)}
+.about-strength-index{display:inline-flex;width:38px;height:38px;border-radius:11px;align-items:center;justify-content:center;background:var(--soft);color:var(--accent-deep);font-size:.78rem;font-weight:800;margin-bottom:20px}
+.about-strength-card h3{font-size:1.22rem;line-height:1.25;margin:0 0 12px}
+.about-strength-card p{margin:0;color:var(--muted);font-size:.96rem}
+.about-projects-section{background:#fff}
+.about-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.about-project-card{margin:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 28px rgba(16,32,45,.045)}
+.about-project-card img{width:100%;height:300px;object-fit:cover;background:#e9eef2}
+.about-project-wide{grid-column:1/-1;display:grid;grid-template-columns:1.35fr .65fr;align-items:stretch}
+.about-project-wide img{height:420px}
+.about-project-card figcaption{padding:20px 22px}
+.about-project-card figcaption strong{display:block;font-size:1.06rem;line-height:1.3;margin-bottom:7px;color:var(--ink)}
+.about-project-card figcaption span{display:block;color:var(--muted);font-size:.92rem;line-height:1.55}
+.about-project-wide figcaption{display:flex;flex-direction:column;justify-content:center;padding:34px}
+.about-project-wide figcaption strong{font-size:1.35rem}
+.about-closing-section h2{color:#fff}
+.about-light-link{color:#c8e6f8}
+.about-light-link:hover{color:#fff}
+
+@media(max-width:980px){
+  .about-intro-grid,.about-section-heading{grid-template-columns:1fr;gap:28px}
+  .about-strength-grid{grid-template-columns:1fr 1fr}
+  .about-project-wide{grid-template-columns:1fr}
+  .about-project-wide img{height:340px}
+}
+@media(max-width:620px){
+  .about-strength-grid,.about-project-grid{grid-template-columns:1fr}
+  .about-project-wide{grid-column:auto}
+  .about-project-card img,.about-project-wide img{height:230px}
+  .about-project-wide figcaption{padding:22px}
+  .about-strength-card{padding:22px}
+}
