@@ -29,4 +29,10 @@
     <loc>https://engineering.jiayiding.com/education/</loc>
     <lastmod>2026-10-13</lastmod>
   </url>
+  <url>
+    <loc>https://engineering.jiayiding.com/publications/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

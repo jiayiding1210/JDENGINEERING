@@ -352,3 +352,26 @@ h1,h2{font-family:"Playfair Display",serif;letter-spacing:-.03em}
   .education-timeline-item .education-degree{font-size:.88rem}
   .education-timeline-item .education-content>p:last-child{font-size:.84rem}
 }
+
+
+/* v31 — compact publications preview and detailed publications page */
+.publications-compact-heading{margin-bottom:18px}
+.publication-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:flex-end}
+.scholar-link{color:var(--accent);font-weight:800;text-decoration:none}
+.scholar-link:hover{text-decoration:underline}
+.publication-compact-list{border-top:1px solid var(--line)}
+.publication-compact-row{display:grid;grid-template-columns:70px 1fr;gap:18px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.publication-compact-row:hover strong{color:var(--accent)}
+.publication-compact-year{font-size:.78rem;font-weight:800;letter-spacing:.08em;color:var(--accent);padding-top:3px}
+.publication-compact-row strong{display:block;font-size:1rem;line-height:1.35;transition:.2s ease}
+.publication-compact-row small{display:block;margin-top:3px;color:var(--muted);font-size:.84rem}
+.subpage-actions{margin:24px 0 0}
+.scholar-button{display:inline-flex;align-items:center;padding:11px 16px;border-radius:999px;background:var(--accent-deep);color:#fff;text-decoration:none;font-weight:800;font-size:.92rem}
+.scholar-button:hover{filter:brightness(1.08)}
+.publication-detail-list{display:grid;gap:18px}
+.publication-detail-card{display:grid;grid-template-columns:90px 1fr;gap:28px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px rgba(16,32,45,.035);scroll-margin-top:96px}
+.publication-detail-year{font-size:.78rem;font-weight:800;letter-spacing:.1em;color:var(--accent);padding-top:7px}
+.publication-detail-card h2{font-size:1.65rem;line-height:1.22;margin:0 0 8px}
+.publication-detail-card p{color:var(--muted)}
+.publication-detail-card .authors{color:#4f5f6b}
+@media(max-width:720px){.publication-actions{justify-content:flex-start}.publication-compact-row{grid-template-columns:54px 1fr;gap:12px}.publication-detail-card{grid-template-columns:1fr;gap:8px;padding:22px}.publication-detail-year{padding-top:0}.publication-detail-card h2{font-size:1.35rem}}
