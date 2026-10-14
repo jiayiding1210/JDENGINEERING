@@ -287,3 +287,34 @@ h1,h2{font-family:"Playfair Display",serif;letter-spacing:-.03em}
   .about-project-card figcaption span{min-height:4.55em}
   .about-strength-card{padding:22px}
 }
+
+/* v27 — clearer section separation and a more concise home page */
+.section-tone-a{background:#f4f7f9}
+.section-tone-b{background:#ffffff}
+.section-tone-c{background:#eef3f6}
+
+/* Reduce vertical length while retaining comfortable reading space */
+.section{padding:68px 0}
+.cards{margin-top:30px}
+.publications-heading,.education-heading{margin-bottom:28px}
+.publication-list{gap:16px}
+.publication-card{padding:22px 24px}
+.conferences-preview{background:#eef3f6}
+
+.compact-section-heading{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:24px}
+.compact-section-heading h2{max-width:720px}
+.education-compact-list{border-top:1px solid var(--line)}
+.education-compact-row{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:18px 0;border-bottom:1px solid var(--line)}
+.education-compact-row h3{margin:0 0 3px;font-size:1.08rem}
+.education-compact-row p{margin:0;color:var(--muted);font-size:.94rem}
+.education-compact-row .education-year{padding-top:2px}
+
+@media(max-width:980px){
+  .section{padding:60px 0}
+  .compact-section-heading{align-items:flex-start;flex-direction:column;gap:12px}
+}
+@media(max-width:620px){
+  .section{padding:48px 0}
+  .education-compact-row{grid-template-columns:1fr;gap:3px;padding:16px 0}
+  .education-compact-row .education-year{font-size:.72rem}
+}
