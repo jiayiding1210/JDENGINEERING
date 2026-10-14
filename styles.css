@@ -265,9 +265,10 @@ h1,h2{font-family:"Playfair Display",serif;letter-spacing:-.03em}
 .about-project-wide img{height:420px}
 .about-project-card figcaption{padding:20px 22px}
 .about-project-card figcaption strong{display:block;font-size:1.06rem;line-height:1.3;margin-bottom:7px;color:var(--ink)}
-.about-project-card figcaption span{display:block;color:var(--muted);font-size:.92rem;line-height:1.55}
+.about-project-card figcaption span{display:block;color:var(--muted);font-size:.92rem;line-height:1.55;min-height:2.9em}
 .about-project-wide figcaption{display:flex;flex-direction:column;justify-content:center;padding:34px}
 .about-project-wide figcaption strong{font-size:1.35rem}
+.about-project-wide figcaption span{min-height:0;font-size:.98rem;line-height:1.6}
 .about-closing-section h2{color:#fff}
 .about-light-link{color:#c8e6f8}
 .about-light-link:hover{color:#fff}
@@ -283,5 +284,6 @@ h1,h2{font-family:"Playfair Display",serif;letter-spacing:-.03em}
   .about-project-wide{grid-column:auto}
   .about-project-card img,.about-project-wide img{height:230px}
   .about-project-wide figcaption{padding:22px}
+  .about-project-card figcaption span{min-height:4.55em}
   .about-strength-card{padding:22px}
 }
