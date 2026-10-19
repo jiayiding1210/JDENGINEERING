@@ -415,3 +415,18 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
   .conference-gallery-faise{grid-template-columns:1fr}
   .conference-gallery-faise figure{min-height:240px}
 }
+
+
+/* Professional engagement detail page */
+.engagement-detail-heading{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;margin-bottom:26px}
+.engagement-detail-heading h2{margin:0;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08}
+.engagement-detail-copy{max-width:900px;margin-bottom:30px}
+.engagement-gallery{display:grid;grid-template-columns:1.2fr .9fr .9fr;gap:16px}
+.engagement-gallery figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(16,32,45,.035)}
+.engagement-gallery img{width:100%;height:320px;object-fit:cover}
+.engagement-gallery figure:first-child img{object-position:center 42%}
+.engagement-gallery figcaption{padding:16px 18px 18px}
+.engagement-gallery figcaption strong{display:block;font-size:1rem;margin-bottom:3px}
+.engagement-gallery figcaption span{display:block;color:var(--muted);font-size:.9rem;line-height:1.45}
+@media(max-width:980px){.engagement-detail-heading{grid-template-columns:1fr;gap:10px}.engagement-gallery{grid-template-columns:1fr 1fr}.engagement-gallery figure:first-child{grid-column:1/-1}}
+@media(max-width:620px){.engagement-gallery{grid-template-columns:1fr}.engagement-gallery figure:first-child{grid-column:auto}.engagement-gallery img{height:250px}}
