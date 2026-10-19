@@ -407,3 +407,11 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
   .home-section-heading{margin-bottom:22px}
   .section h2{font-size:clamp(1.85rem,8.6vw,2.45rem)}
 }
+
+/* FAISE conference gallery */
+.conference-gallery-faise{grid-template-columns:1.1fr .9fr}
+.conference-gallery-faise figure{min-height:320px}
+@media(max-width:760px){
+  .conference-gallery-faise{grid-template-columns:1fr}
+  .conference-gallery-faise figure{min-height:240px}
+}
