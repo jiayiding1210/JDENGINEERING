@@ -437,3 +437,12 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 @media(max-width:1100px){.focus-cards{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){.focus-cards{grid-template-columns:1fr 1fr}.focus-card{min-height:0}}
 @media(max-width:520px){.focus-cards{grid-template-columns:1fr}}
+
+
+/* v39 — technical expertise integrated into Core Areas of Focus */
+.focus-intro{max-width:820px;margin:18px 0 0;color:var(--muted);font-size:1rem;line-height:1.65}
+.focus-tags{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 2px}
+.focus-tags span{font-size:.76rem;line-height:1.25;padding:6px 9px;border-radius:999px;background:#eef3f6;color:#344b5b;font-weight:600}
+.focus-card{display:flex;flex-direction:column}
+.focus-card .focus-link{margin-top:auto;padding-top:16px}
+@media(max-width:620px){.focus-intro{font-size:.95rem;margin-top:14px}.focus-tags{margin-top:13px}.focus-tags span{font-size:.73rem;padding:5px 8px}}
