@@ -974,3 +974,10 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 .workflow-software-card b{font-size:1.05rem;font-weight:600;color:#9dc4dc;line-height:1;transition:transform .18s ease}
 .workflow-software-card:hover b{transform:translateX(4px)}
 .workflow-integrated-heading-v80 strong{color:#fff;font-weight:700}
+
+/* v85: compact workflow software blocks */
+.workflow-software-grid-v80{gap:10px;padding-top:22px}
+.workflow-software-card{min-height:86px;padding:16px 18px;border-radius:12px;justify-content:center}
+.workflow-software-card span{font-size:.94rem}
+.workflow-software-card b{display:none!important}
+@media (max-width:620px){.workflow-software-card{min-height:74px;padding:14px 16px}}
