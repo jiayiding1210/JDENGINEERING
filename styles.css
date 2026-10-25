@@ -393,8 +393,8 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 .publications-compact-heading>div:first-child{max-width:650px}
 .conference-heading-stagger{grid-template-columns:.9fr 1.1fr;align-items:end}
 .conference-heading-stagger .home-heading-right{justify-self:end;max-width:620px}
-.engagement-split{grid-template-columns:1.1fr .9fr;align-items:start}
-.engagement-heading{text-align:right}
+.engagement-split{grid-template-columns:.9fr 1.1fr;align-items:start}
+.engagement-heading{text-align:left}
 .section-note{color:#6e6e73}
 .text-link,.scholar-link{color:#0066cc}
 @media(max-width:980px){
