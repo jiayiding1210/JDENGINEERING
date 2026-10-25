@@ -672,3 +672,10 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 .education-history-timeline{margin-top:26px}
 .education-history-item .employment-body>p:last-child{max-width:760px}
 @media(max-width:620px){.education-history-timeline{margin-top:20px}}
+
+/* Resume credentials hierarchy */
+.resume-credentials-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:26px}
+.resume-credentials-grid .resume-detail-card{height:100%}
+.resume-detail-primary h3{margin-top:16px}
+.resume-detail-primary h3:first-of-type{margin-top:8px}
+@media(max-width:900px){.resume-credentials-grid{grid-template-columns:1fr}}
