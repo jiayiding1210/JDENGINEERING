@@ -679,3 +679,25 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 .resume-detail-primary h3{margin-top:16px}
 .resume-detail-primary h3:first-of-type{margin-top:8px}
 @media(max-width:900px){.resume-credentials-grid{grid-template-columns:1fr}}
+
+
+/* v60 — align homepage title blocks */
+#about .home-aligned-section,
+#engagement .home-aligned-section{grid-template-columns:.82fr 1.18fr;gap:68px;align-items:start}
+#publications .home-aligned-section{display:grid;grid-template-columns:.82fr 1.18fr;gap:68px;align-items:end}
+#about .home-aligned-title,
+#publications .home-aligned-title,
+#engagement .home-aligned-title{width:100%;max-width:none;text-align:left}
+#about .home-aligned-title h2,
+#publications .home-aligned-title h2,
+#engagement .home-aligned-title h2{max-width:470px}
+#publications .publication-actions{justify-self:start;align-self:end}
+#engagement .engagement-heading{justify-self:stretch}
+@media(max-width:980px){
+  #about .home-aligned-section,
+  #publications .home-aligned-section,
+  #engagement .home-aligned-section{grid-template-columns:1fr;gap:28px}
+  #about .home-aligned-title h2,
+  #publications .home-aligned-title h2,
+  #engagement .home-aligned-title h2{max-width:720px}
+}
