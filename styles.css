@@ -627,3 +627,48 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
   .employment-item{grid-template-columns:1fr;gap:6px;padding:20px 0}
   .employment-period{padding-top:0}
 }
+
+
+/* Rehabilitation project portfolio */
+.rehab-theme-grid{margin-top:28px}
+.rehab-project-list{display:grid;gap:28px;margin-top:30px}
+.rehab-project-card{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;padding:18px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 12px 28px rgba(16,32,45,.045)}
+.rehab-project-media{min-width:0}
+.rehab-project-slider .conference-slides{border-radius:20px;overflow:hidden;background:#edf2f5}
+.rehab-project-slider .conference-slide{margin:0;min-height:0}
+.rehab-project-slider .conference-slide img{width:100%;display:block;height:100%;min-height:340px;max-height:430px;object-fit:cover;background:#eef2f5}
+.rehab-project-copy{display:flex;flex-direction:column;justify-content:center}
+.rehab-project-copy h3{font-size:1.6rem;line-height:1.18;margin:2px 0 6px}
+.rehab-project-location{font-size:.92rem;color:var(--accent-deep);font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-bottom:12px}
+.rehab-project-copy p{margin:0 0 14px;line-height:1.65;color:var(--muted)}
+.rehab-project-bullets{margin:0 0 16px 0;padding-left:18px;color:var(--muted)}
+.rehab-project-bullets li{margin-bottom:8px}
+.project-link-row{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:16px}
+.project-inline-link{display:inline-flex;align-items:center}
+.project-facts-grid{margin-bottom:28px}
+.project-profile-hero{margin-top:0}
+.project-reference-list{margin-top:28px;padding:22px 24px;border:1px solid var(--line);border-radius:20px;background:#fff}
+.project-reference-list ul{margin:12px 0 0;padding-left:18px}
+.project-reference-list li{margin-bottom:8px}
+.about-project-link{display:inline-flex;align-items:center;margin-top:14px;color:var(--accent-deep);font-weight:800;text-decoration:none}
+.about-project-link:hover{text-decoration:underline}
+.about-project-subsection{margin-top:34px;padding-top:30px;border-top:1px solid var(--line)}
+.rehab-subheading h3{font-size:1.35rem;margin:6px 0 0}
+.rehab-project-grid-compact .about-project-card img{height:260px}
+.rehab-project-grid-compact .about-project-card figcaption span{min-height:5.8em}
+@media (max-width: 960px){
+  .rehab-project-card{grid-template-columns:1fr;gap:18px;padding:16px}
+  .rehab-project-slider .conference-slide img{min-height:260px;max-height:none}
+}
+@media (max-width: 620px){
+  .rehab-project-copy h3{font-size:1.35rem}
+  .project-link-row{gap:10px 14px}
+  .resume-button{width:100%;justify-content:center}
+  .rehab-project-grid-compact .about-project-card img{height:220px}
+}
+
+
+/* Homepage education history */
+.education-history-timeline{margin-top:26px}
+.education-history-item .employment-body>p:last-child{max-width:760px}
+@media(max-width:620px){.education-history-timeline{margin-top:20px}}
