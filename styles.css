@@ -721,3 +721,18 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
   #focus .focus-cards{grid-template-columns:1fr}
   #focus .focus-card,#focus .focus-card:nth-child(even),#focus .focus-card:last-child{grid-column:auto;border-left:0;padding:22px 4px}
 }
+
+
+/* v67 — align Core Areas intro/title and vertically align focus descriptions */
+#focus .focus-heading-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:64px;align-items:end;margin-bottom:30px}
+#focus .focus-heading-grid .home-section-heading{margin-bottom:0}
+#focus .focus-intro-aligned{max-width:none;margin:0;align-self:end}
+#focus .focus-intro-aligned p{margin:0;color:var(--muted);font-size:1rem;line-height:1.65;max-width:560px}
+#focus .focus-card h3{min-height:3.15em;margin:0 0 18px;display:flex;align-items:flex-end}
+#focus .focus-card p{margin:0 0 18px}
+@media(max-width:900px){
+  #focus .focus-heading-grid{grid-template-columns:1fr;gap:22px;align-items:start}
+  #focus .focus-heading-grid .home-section-heading{order:1;justify-content:flex-start;text-align:left}
+  #focus .focus-intro-aligned{order:2}
+  #focus .focus-card h3{min-height:0;margin-bottom:12px}
+}
