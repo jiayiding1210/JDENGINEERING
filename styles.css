@@ -968,3 +968,9 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
   .workflow-software-grid-v80{grid-template-columns:1fr}
   .workflow-software-card{min-height:100px}
 }
+
+/* Workflow software blocks: full-card navigation */
+.workflow-software-card{position:relative;justify-content:center;gap:14px}
+.workflow-software-card b{font-size:1.05rem;font-weight:600;color:#9dc4dc;line-height:1;transition:transform .18s ease}
+.workflow-software-card:hover b{transform:translateX(4px)}
+.workflow-integrated-heading-v80 strong{color:#fff;font-weight:700}
