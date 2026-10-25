@@ -1,9 +1,72 @@
-const menuBtn = document.getElementById('menuBtn');
+
+const menuBtn = document.getElementById('menuBtn') || document.querySelector('.menu-btn');
 const nav = document.getElementById('nav');
 if (menuBtn && nav) {
-  menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+  menuBtn.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+  });
 }
 
+function initGenericSlider(root) {
+  const slides = [...root.querySelectorAll('[data-slider-slide]')];
+  if (!slides.length) return;
+  const dots = [...root.querySelectorAll('[data-slider-dot]')];
+  const prev = root.querySelector('[data-slider-prev]');
+  const next = root.querySelector('[data-slider-next]');
+  const controls = root.querySelector('.conference-slider-controls');
+  let index = 0;
+  let timer = null;
+  let touchStartX = 0;
+  let touchEndX = 0;
+  const autoplay = root.dataset.autoplay !== 'false';
+  const delay = Number(root.dataset.delay || 7000);
+
+  function show(i) {
+    index = (i + slides.length) % slides.length;
+    slides.forEach((slide, n) => {
+      const active = n === index;
+      slide.hidden = !active;
+      slide.classList.toggle('active', active);
+    });
+    dots.forEach((dot, n) => dot.classList.toggle('active', n === index));
+  }
+
+  function resetTimer() {
+    if (timer) clearInterval(timer);
+    if (autoplay && slides.length > 1) {
+      timer = setInterval(() => show(index + 1), delay);
+    }
+  }
+
+  function goPrev() { show(index - 1); resetTimer(); }
+  function goNext() { show(index + 1); resetTimer(); }
+
+  if (slides.length <= 1 && controls) controls.style.display = 'none';
+
+  prev?.addEventListener('click', goPrev);
+  next?.addEventListener('click', goNext);
+  dots.forEach((dot, i) => dot.addEventListener('click', () => { show(i); resetTimer(); }));
+
+  root.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, {passive: true});
+  root.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const delta = touchEndX - touchStartX;
+    if (Math.abs(delta) > 40) {
+      if (delta > 0) goPrev();
+      else goNext();
+    }
+  }, {passive: true});
+
+  show(0);
+  resetTimer();
+}
+
+document.querySelectorAll('[data-slider]').forEach(initGenericSlider);
+
+// Legacy conference slider support used on existing pages.
 const conferenceSlides = [...document.querySelectorAll('[data-conference-slide]')];
 const conferenceDots = [...document.querySelectorAll('[data-conference-dot]')];
 const conferencePrev = document.querySelector('[data-conference-prev]');
