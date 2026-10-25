@@ -736,3 +736,7 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
   #focus .focus-intro-aligned{order:2}
   #focus .focus-card h3{min-height:0;margin-bottom:12px}
 }
+
+/* About page project group headings */
+.project-group-heading{margin-top:26px;margin-bottom:22px}
+.project-group-heading h3,.rehab-subheading h3{margin-top:6px}
