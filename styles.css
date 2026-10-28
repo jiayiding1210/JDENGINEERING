@@ -981,3 +981,12 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 .workflow-software-card span{font-size:.94rem}
 .workflow-software-card b{display:none!important}
 @media (max-width:620px){.workflow-software-card{min-height:74px;padding:14px 16px}}
+
+/* ASCE Florida 2024 conference slideshow */
+.conference-event-slider{margin-top:30px}
+.conference-event-slider .conference-slides{max-width:980px;margin:0 auto;border-radius:20px;overflow:hidden;background:#eef2f5}
+.conference-event-slider .conference-slide{margin:0;height:560px;background:#eef2f5}
+.conference-event-slider .conference-slide img{width:100%;height:100%;object-fit:contain;display:block;background:#eef2f5}
+.conference-collaborators{margin-top:18px}
+@media(max-width:900px){.conference-event-slider .conference-slide{height:460px}}
+@media(max-width:620px){.conference-event-slider .conference-slide{height:300px}}
