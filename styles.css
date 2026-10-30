@@ -990,3 +990,18 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 .conference-collaborators{margin-top:18px}
 @media(max-width:900px){.conference-event-slider .conference-slide{height:460px}}
 @media(max-width:620px){.conference-event-slider .conference-slide{height:300px}}
+
+
+/* Photo credits and source notes */
+.photo-credit-note{margin:8px 2px 0;font-size:.78rem;line-height:1.35;color:var(--muted)}
+.photo-credit-note a{color:var(--muted);text-decoration:none;border-bottom:1px solid rgba(88,101,112,.28)}
+.photo-credit-note a:hover{color:var(--accent-deep);border-bottom-color:var(--accent-deep)}
+.photo-credit-list{display:grid;gap:0;max-width:980px}
+.photo-credit-entry{padding:28px 0;border-bottom:1px solid var(--line)}
+.photo-credit-entry:first-child{padding-top:0}
+.photo-credit-entry h2{font-size:1.35rem;line-height:1.25;margin:4px 0 10px}
+.photo-credit-entry p:not(.eyebrow){max-width:820px;color:var(--muted);line-height:1.7;margin:0 0 10px}
+.credit-separator{display:inline-block;margin:0 8px;color:var(--muted)}
+.footer-meta{margin-top:8px;font-size:.8rem}
+.footer-meta a{color:inherit;opacity:.72;text-decoration:none}
+.footer-meta a:hover{opacity:1;text-decoration:underline}
