@@ -1049,3 +1049,13 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
   .resume-project-map-detail{grid-template-columns:1fr;gap:6px;padding:18px}
   .resume-project-map-detail .eyebrow{margin-bottom:2px}
 }
+
+.resume-affiliation-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.resume-affiliation-list li{padding:10px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:.94rem}
+.resume-affiliation-list li:first-child{padding-top:0}
+.resume-affiliation-list li:last-child{border-bottom:0;padding-bottom:0}
+.resume-project-list + .resume-project-map-wrap{margin-top:40px}
+
+.resume-project-map-detail-location-only{grid-template-columns:170px 1fr}
+.resume-project-map-detail-location-only h4{font-size:1.05rem;color:var(--text)}
+@media(max-width:620px){.resume-project-map-detail-location-only{grid-template-columns:1fr}}
