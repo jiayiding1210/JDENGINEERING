@@ -1060,3 +1060,18 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 
 .project-map-detail-projects{display:grid;gap:4px}
 .project-map-detail-projects h4{margin:0;font-size:1.05rem;line-height:1.35}
+
+/* Resume project carousel */
+.resume-project-carousel{margin-top:28px}
+.resume-project-slides{min-height:340px}
+.resume-project-slide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.resume-project-card{min-height:305px;padding:24px;border:1px solid var(--line);border-radius:20px;background:#fff;display:flex;flex-direction:column}
+.resume-project-card .resume-project-role{padding:0;margin:0 0 14px}
+.resume-project-card h3{margin:0 0 12px;font-size:1.08rem;line-height:1.35}
+.resume-project-card>p:last-child{margin:0;color:var(--muted);font-size:.93rem;line-height:1.62}
+.resume-project-slider-controls{margin-top:20px}
+.resume-project-map-heading{display:block;margin-bottom:18px}
+.resume-project-map-heading .eyebrow{margin:0 0 5px}
+.resume-project-map-heading h3{margin:0;font-size:1.28rem;line-height:1.25}
+@media(max-width:900px){.resume-project-slide-grid{grid-template-columns:1fr 1fr}.resume-project-card{min-height:0}.resume-project-slides{min-height:0}}
+@media(max-width:620px){.resume-project-slide-grid{grid-template-columns:1fr}.resume-project-card{padding:20px}.resume-project-slider-controls{gap:12px}}
