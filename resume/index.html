@@ -9,7 +9,6 @@
 <link href="https://engineering.jiayiding.com/resume/" rel="canonical"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/styles.css" rel="stylesheet"/>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3ynsRsvALqkP8GHI5R5z8Zx3dY3Z0=" crossorigin=""/>
 </head>
 <body>
 <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/">Jiayi Ding · Engineering</a><nav class="nav" id="nav"><a href="/about/">About</a><a href="/workflow/">Workflow</a><a href="/publications/">Publications</a><a href="/conferences/">Conferences</a><a href="/education/">Education</a></nav><button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="menu-btn">☰</button></div></header>
@@ -47,7 +46,16 @@
 <p>Explore representative projects from Jiayi’s resume. Select a marker to view the project, location, and role.</p>
 </div>
 <div class="resume-project-map-card">
-<div id="resumeProjectMap" class="resume-project-map" role="region" aria-label="Interactive map of selected bridge projects"></div>
+<div id="resumeProjectMap" class="resume-project-map-static" role="region" aria-label="Interactive map of selected bridge projects">
+<img src="/project-experience-map.png" alt="Map of the United States and southern Canada showing selected bridge project locations" class="resume-project-map-image"/>
+<button class="project-map-pin" type="button" style="left:74.80%;top:80.19%" data-project="0" aria-label="CFX SR 414 Expressway Extension, Orlando, Florida" title="CFX SR 414 Expressway Extension"><span></span></button><button class="project-map-pin" type="button" style="left:37.82%;top:46.24%" data-project="1" aria-label="I-70 Floyd Hill, Clear Creek County, Colorado" title="I-70 Floyd Hill"><span></span></button><button class="project-map-pin" type="button" style="left:75.36%;top:86.30%" data-project="2" aria-label="Broward County Bridge Rehabilitation, Broward County, Florida" title="Broward County Bridge Rehabilitation"><span></span></button><button class="project-map-pin" type="button" style="left:77.53%;top:83.04%" data-project="3" aria-label="Roosevelt Bridge Emergency Repair, Stuart, Florida" title="Roosevelt Bridge Emergency Repair"><span></span></button><button class="project-map-pin" type="button" style="left:75.61%;top:89.92%" data-project="4" aria-label="I-395 Signature Bridge, Miami, Florida" title="I-395 Signature Bridge"><span></span></button><button class="project-map-pin" type="button" style="left:77.69%;top:89.06%" data-project="5" aria-label="Fort Lauderdale-Hollywood International Airport Terminal 5, Fort Lauderdale, Florida" title="Fort Lauderdale-Hollywood International Airport Terminal 5"><span></span></button><button class="project-map-pin" type="button" style="left:77.95%;top:34.24%" data-project="6" aria-label="Don Valley Crossing, Toronto, Ontario" title="Don Valley Crossing"><span></span></button><button class="project-map-pin" type="button" style="left:86.26%;top:43.15%" data-project="7" aria-label="Queensboro & Throgs Neck Bridges, New York City, New York" title="Queensboro & Throgs Neck Bridges"><span></span></button>
+</div>
+<div class="resume-project-map-detail" id="resumeProjectMapDetail" aria-live="polite">
+<p class="eyebrow">SELECTED PROJECT</p>
+<h4>CFX SR 414 Expressway Extension</h4>
+<p class="project-map-detail-location">Orlando, Florida</p>
+<p class="project-map-detail-role">Substructure Lead Engineer</p>
+</div>
 </div>
 </div></div>
 </div></section><section class="section section-tone-b"><div class="container">
@@ -110,6 +118,5 @@
 </div></section>
 </main>
 <footer class="footer"><div class="container footer-wrap"><div><strong>Engineering by Jiayi Ding</strong><p>Bridges &amp; Structures · Design · Assessment · Maintenance · NDT · Rehabilitation</p></div></div></footer>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="/script.js"></script>
 </body></html>
