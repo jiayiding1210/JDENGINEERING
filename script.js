@@ -99,3 +99,46 @@ if (conferenceSlides.length) {
   conferenceDots.forEach((dot, i) => dot.addEventListener('click', () => { showConference(i); resetConferenceTimer(); }));
   resetConferenceTimer();
 }
+
+
+
+
+
+// Self-contained interactive project map on resume page.
+(() => {
+  const mapEl = document.getElementById('resumeProjectMap');
+  const detail = document.getElementById('resumeProjectMapDetail');
+  if (!mapEl || !detail) return;
+
+  const locationGroups = [
+    { location:'Orlando, Florida', projects:['CFX SR 414 Expressway Extension'] },
+    { location:'Clear Creek County, Colorado', projects:['I-70 Floyd Hill'] },
+    { location:'Broward County, Florida', projects:['Sonovoid Bridge Rehabilitation Program','Fort Lauderdale-Hollywood International Airport Terminal 5'] },
+    { location:'Stuart, Florida', projects:['Roosevelt Bridge Emergency Repair'] },
+    { location:'Miami, Florida', projects:['I-395 Signature Bridge'] },
+    { location:'Toronto, Ontario', projects:['Don Valley Crossing'] },
+    { location:'New York City', projects:['Queensboro & Throgs Neck Bridges'] }
+  ];
+
+  const pins = [...mapEl.querySelectorAll('.project-map-pin')];
+
+  function selectLocation(i) {
+    const group = locationGroups[i];
+    if (!group) return;
+    pins.forEach((pin,n) => pin.classList.toggle('active', n === i));
+    const projectMarkup = group.projects.map(name => `<h4>${name}</h4>`).join('');
+    detail.innerHTML = `<p class="eyebrow">${group.projects.length > 1 ? 'SELECTED PROJECTS' : 'SELECTED PROJECT'}</p><div class="project-map-detail-projects">${projectMarkup}</div><p class="project-map-detail-location">${group.location}</p>`;
+  }
+
+  pins.forEach((pin,i) => {
+    pin.addEventListener('click', () => selectLocation(i));
+    pin.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        selectLocation(i);
+      }
+    });
+  });
+
+  selectLocation(0);
+})();
