@@ -9,6 +9,7 @@
 <link href="https://engineering.jiayiding.com/resume/" rel="canonical"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/styles.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3ynsRsvALqkP8GHI5R5z8Zx3dY3Z0=" crossorigin=""/>
 </head>
 <body>
 <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/">Jiayi Ding · Engineering</a><nav class="nav" id="nav"><a href="/about/">About</a><a href="/workflow/">Workflow</a><a href="/publications/">Publications</a><a href="/conferences/">Conferences</a><a href="/education/">Education</a></nav><button aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" class="menu-btn">☰</button></div></header>
@@ -39,33 +40,16 @@
 <p>American Society of Civil Engineers · Structural Engineering Institute · American Institute of Steel Construction · American Segmental Bridge Institute</p>
 </article>
 </div>
-<div class="resume-license-map-wrap" data-license-map="">
-<div class="resume-license-map-heading">
-<p class="eyebrow">PE LICENSE MAP</p>
-<h3>Professional Engineer registrations in four states</h3>
-<p>Select a highlighted state to view the original licensure year.</p>
+<div class="resume-project-map-wrap">
+<div class="resume-project-map-heading">
+<p class="eyebrow">PROJECT GEOGRAPHY</p>
+<h3>Selected bridge projects across North America</h3>
+<p>Explore representative projects from Jiayi’s resume. Select a marker to view the project, location, and role.</p>
 </div>
-<div class="interactive-license-map-card">
-<div class="license-map-image-stage">
-<img alt="Professional Engineer license map highlighting California, Colorado, Florida, and New York." class="resume-license-map-clean" src="/pe-license-map.png"/>
-<button aria-label="California PE license, 2019" class="license-map-hotspot hotspot-ca" data-license-state="CA" type="button"></button>
-<button aria-label="Colorado PE license, 2024" class="license-map-hotspot hotspot-co" data-license-state="CO" type="button"></button>
-<button aria-label="Florida PE license, 2019" class="license-map-hotspot hotspot-fl" data-license-state="FL" type="button"></button>
-<button aria-label="New York PE license, 2021" class="license-map-hotspot hotspot-ny" data-license-state="NY" type="button"></button>
+<div class="resume-project-map-card">
+<div id="resumeProjectMap" class="resume-project-map" role="region" aria-label="Interactive map of selected bridge projects"></div>
 </div>
-<div aria-live="polite" class="license-map-detail">
-<span class="license-map-detail-label">Selected registration</span>
-<strong data-license-detail-name="">Florida</strong>
-<span data-license-detail-year="">Licensed since 2019</span>
-</div>
-<div aria-label="Professional Engineer license states" class="license-state-buttons">
-<button class="license-state-button" data-license-button="CA" type="button">California <span>2019</span></button>
-<button class="license-state-button" data-license-button="CO" type="button">Colorado <span>2024</span></button>
-<button class="license-state-button active" data-license-button="FL" type="button">Florida <span>2019</span></button>
-<button class="license-state-button" data-license-button="NY" type="button">New York <span>2021</span></button>
-</div>
-</div>
-</div>
+</div></div>
 </div></section><section class="section section-tone-b"><div class="container">
 <div class="home-section-heading"><div><p class="eyebrow">EMPLOYMENT</p><h2>Structural engineering and technical leadership</h2></div></div>
 <div class="employment-timeline">
@@ -126,5 +110,6 @@
 </div></section>
 </main>
 <footer class="footer"><div class="container footer-wrap"><div><strong>Engineering by Jiayi Ding</strong><p>Bridges &amp; Structures · Design · Assessment · Maintenance · NDT · Rehabilitation</p></div></div></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="/script.js"></script>
 </body></html>
