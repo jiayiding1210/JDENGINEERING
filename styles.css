@@ -1028,3 +1028,24 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
   .resume-project-map-heading .eyebrow,.resume-project-map-heading h3,.resume-project-map-heading>p:last-child{grid-column:1;grid-row:auto}
   .resume-project-map{height:430px}
 }
+
+/* Self-contained interactive project map */
+.resume-project-map-card{overflow:hidden}
+.resume-project-map-static{position:relative;width:100%;background:#f7f9fc;line-height:0}
+.resume-project-map-image{display:block;width:100%;height:auto}
+.project-map-pin{position:absolute;width:20px;height:20px;transform:translate(-50%,-50%);border:0;background:transparent;padding:0;cursor:pointer;border-radius:50%;z-index:2}
+.project-map-pin span{display:block;width:14px;height:14px;margin:3px;border-radius:50%;background:#2865a8;border:2px solid #fff;box-shadow:0 0 0 2px rgba(40,101,168,.24),0 3px 9px rgba(0,0,0,.18);transition:transform .18s ease,background .18s ease,box-shadow .18s ease}
+.project-map-pin:hover span,.project-map-pin:focus-visible span,.project-map-pin.active span{transform:scale(1.28);background:#174a82;box-shadow:0 0 0 4px rgba(40,101,168,.18),0 4px 12px rgba(0,0,0,.22)}
+.project-map-pin:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.resume-project-map-detail{display:grid;grid-template-columns:170px 1fr 1fr;gap:18px 28px;align-items:start;padding:20px 24px;border-top:1px solid var(--line);background:#fff}
+.resume-project-map-detail .eyebrow{margin:3px 0 0}
+.resume-project-map-detail h4{margin:0;font-size:1.05rem;line-height:1.35}
+.resume-project-map-detail p{margin:0}
+.project-map-detail-location{font-size:.9rem;color:var(--accent-deep);font-weight:700}
+.project-map-detail-role{font-size:.9rem;color:var(--muted)}
+@media(max-width:760px){
+  .project-map-pin{width:28px;height:28px}
+  .project-map-pin span{width:16px;height:16px;margin:6px}
+  .resume-project-map-detail{grid-template-columns:1fr;gap:6px;padding:18px}
+  .resume-project-map-detail .eyebrow{margin-bottom:2px}
+}
