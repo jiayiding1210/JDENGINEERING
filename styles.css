@@ -1006,37 +1006,25 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 .footer-meta a{color:inherit;opacity:.72;text-decoration:none}
 .footer-meta a:hover{opacity:1;text-decoration:underline}
 
-.resume-license-map-wrap{margin-top:28px}
-.resume-license-map{display:block;width:100%;max-width:1180px;margin:0 auto;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 16px 36px rgba(16,24,40,.06)}
 
-/* Interactive PE license map */
-.resume-license-map-heading{display:grid;grid-template-columns:.75fr 1.25fr;gap:28px;align-items:end;margin-bottom:18px}
-.resume-license-map-heading .eyebrow{grid-column:1;margin:0}
-.resume-license-map-heading h3{grid-column:1;margin:4px 0 0;font-size:1.28rem;line-height:1.25}
-.resume-license-map-heading>p:last-child{grid-column:2;grid-row:1 / span 2;margin:0;color:var(--muted);max-width:620px}
-.interactive-license-map-card{border:1px solid var(--line);border-radius:22px;background:#fff;padding:24px;box-shadow:0 16px 36px rgba(16,24,40,.05)}
-.license-map-detail{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:15px 18px;border:1px solid var(--line);border-radius:14px;background:#f7f9fc;margin-top:6px}
-.license-map-detail-label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--accent)}
-.license-map-detail strong{font-size:1rem}
-.license-map-detail>span:last-child{color:var(--muted);font-size:.92rem}
-.license-state-buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
-.license-state-button{border:1px solid var(--line);background:#fff;border-radius:12px;padding:11px 12px;font:inherit;font-size:.88rem;font-weight:700;color:var(--text);cursor:pointer;text-align:left;transition:border-color .18s ease,background .18s ease}
-.license-state-button span{display:block;color:var(--muted);font-size:.78rem;font-weight:600;margin-top:2px}
-.license-state-button:hover,.license-state-button:focus,.license-state-button.active{border-color:#2865a8;background:#f2f7fc;outline:none}
+/* Interactive project map on resume page */
+.resume-project-map-wrap{margin-top:30px}
+.resume-project-map-heading{display:grid;grid-template-columns:.78fr 1.22fr;gap:28px;align-items:end;margin-bottom:18px}
+.resume-project-map-heading .eyebrow{grid-column:1;margin:0}
+.resume-project-map-heading h3{grid-column:1;margin:4px 0 0;font-size:1.28rem;line-height:1.25}
+.resume-project-map-heading>p:last-child{grid-column:2;grid-row:1 / span 2;margin:0;color:var(--muted);max-width:620px}
+.resume-project-map-card{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 16px 36px rgba(16,24,40,.05)}
+.resume-project-map{height:520px;width:100%;background:#eef2f6}
+.resume-project-map .leaflet-popup-content-wrapper{border-radius:14px;box-shadow:0 12px 32px rgba(16,24,40,.16)}
+.resume-project-map .leaflet-popup-content{margin:16px 18px;min-width:240px;max-width:310px;font-family:inherit;color:var(--text)}
+.resume-project-map .project-map-popup-kicker{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--accent);margin:0 0 4px}
+.resume-project-map .project-map-popup-title{font-size:1rem;line-height:1.25;margin:0 0 6px;font-weight:800}
+.resume-project-map .project-map-popup-location{font-size:.82rem;color:var(--accent-deep);font-weight:700;margin:0 0 8px}
+.resume-project-map .project-map-popup-role{font-size:.84rem;line-height:1.5;color:var(--muted);margin:0}
+.project-map-marker{width:18px;height:18px;border-radius:50%;background:#2865a8;border:3px solid #fff;box-shadow:0 0 0 2px rgba(40,101,168,.28),0 3px 10px rgba(0,0,0,.22)}
+.resume-project-map .leaflet-control-attribution{font-size:10px}
 @media(max-width:780px){
-  .resume-license-map-heading{grid-template-columns:1fr;gap:8px}
-  .resume-license-map-heading .eyebrow,.resume-license-map-heading h3,.resume-license-map-heading>p:last-child{grid-column:1;grid-row:auto}
-  .interactive-license-map-card{padding:14px}
-  .license-state-buttons{grid-template-columns:1fr 1fr}
-  .license-map-detail{grid-template-columns:1fr;gap:4px}
-  }
-
-.license-map-image-stage{position:relative;max-width:1180px;margin:0 auto;border-radius:18px;overflow:hidden;background:#fff}
-.resume-license-map-clean{display:block;width:100%;height:auto}
-.license-map-hotspot{position:absolute;border:0;background:transparent;cursor:pointer;border-radius:10px;padding:0;outline:none}
-.license-map-hotspot::after{content:"";position:absolute;inset:-3px;border:2px solid transparent;border-radius:12px;transition:border-color .18s ease,background .18s ease}
-.license-map-hotspot:hover::after,.license-map-hotspot:focus-visible::after,.license-map-hotspot.active::after{border-color:#143b7f;background:rgba(20,59,127,.08)}
-.hotspot-ca{left:18.2%;top:36.0%;width:13.0%;height:25.0%}
-.hotspot-co{left:39.2%;top:36.8%;width:10.6%;height:11.8%}
-.hotspot-fl{left:72.9%;top:56.2%;width:8.5%;height:19.5%}
-.hotspot-ny{left:80.6%;top:28.2%;width:10.8%;height:10.5%}
+  .resume-project-map-heading{grid-template-columns:1fr;gap:8px}
+  .resume-project-map-heading .eyebrow,.resume-project-map-heading h3,.resume-project-map-heading>p:last-child{grid-column:1;grid-row:auto}
+  .resume-project-map{height:430px}
+}
