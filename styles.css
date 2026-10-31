@@ -1005,3 +1005,38 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 .footer-meta{margin-top:8px;font-size:.8rem}
 .footer-meta a{color:inherit;opacity:.72;text-decoration:none}
 .footer-meta a:hover{opacity:1;text-decoration:underline}
+
+.resume-license-map-wrap{margin-top:28px}
+.resume-license-map{display:block;width:100%;max-width:1180px;margin:0 auto;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 16px 36px rgba(16,24,40,.06)}
+
+/* Interactive PE license map */
+.resume-license-map-heading{display:grid;grid-template-columns:.75fr 1.25fr;gap:28px;align-items:end;margin-bottom:18px}
+.resume-license-map-heading .eyebrow{grid-column:1;margin:0}
+.resume-license-map-heading h3{grid-column:1;margin:4px 0 0;font-size:1.28rem;line-height:1.25}
+.resume-license-map-heading>p:last-child{grid-column:2;grid-row:1 / span 2;margin:0;color:var(--muted);max-width:620px}
+.interactive-license-map-card{border:1px solid var(--line);border-radius:22px;background:#fff;padding:24px;box-shadow:0 16px 36px rgba(16,24,40,.05)}
+.license-map-detail{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:15px 18px;border:1px solid var(--line);border-radius:14px;background:#f7f9fc;margin-top:6px}
+.license-map-detail-label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--accent)}
+.license-map-detail strong{font-size:1rem}
+.license-map-detail>span:last-child{color:var(--muted);font-size:.92rem}
+.license-state-buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.license-state-button{border:1px solid var(--line);background:#fff;border-radius:12px;padding:11px 12px;font:inherit;font-size:.88rem;font-weight:700;color:var(--text);cursor:pointer;text-align:left;transition:border-color .18s ease,background .18s ease}
+.license-state-button span{display:block;color:var(--muted);font-size:.78rem;font-weight:600;margin-top:2px}
+.license-state-button:hover,.license-state-button:focus,.license-state-button.active{border-color:#2865a8;background:#f2f7fc;outline:none}
+@media(max-width:780px){
+  .resume-license-map-heading{grid-template-columns:1fr;gap:8px}
+  .resume-license-map-heading .eyebrow,.resume-license-map-heading h3,.resume-license-map-heading>p:last-child{grid-column:1;grid-row:auto}
+  .interactive-license-map-card{padding:14px}
+  .license-state-buttons{grid-template-columns:1fr 1fr}
+  .license-map-detail{grid-template-columns:1fr;gap:4px}
+  }
+
+.license-map-image-stage{position:relative;max-width:1180px;margin:0 auto;border-radius:18px;overflow:hidden;background:#fff}
+.resume-license-map-clean{display:block;width:100%;height:auto}
+.license-map-hotspot{position:absolute;border:0;background:transparent;cursor:pointer;border-radius:10px;padding:0;outline:none}
+.license-map-hotspot::after{content:"";position:absolute;inset:-3px;border:2px solid transparent;border-radius:12px;transition:border-color .18s ease,background .18s ease}
+.license-map-hotspot:hover::after,.license-map-hotspot:focus-visible::after,.license-map-hotspot.active::after{border-color:#143b7f;background:rgba(20,59,127,.08)}
+.hotspot-ca{left:18.2%;top:36.0%;width:13.0%;height:25.0%}
+.hotspot-co{left:39.2%;top:36.8%;width:10.6%;height:11.8%}
+.hotspot-fl{left:72.9%;top:56.2%;width:8.5%;height:19.5%}
+.hotspot-ny{left:80.6%;top:28.2%;width:10.8%;height:10.5%}
