@@ -1074,3 +1074,5 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 .resume-project-map-heading h3{margin:0;font-size:1.28rem;line-height:1.25}
 @media(max-width:900px){.resume-project-slide-grid{grid-template-columns:1fr 1fr}.resume-project-card{min-height:0}.resume-project-slides{min-height:0}}
 @media(max-width:620px){.resume-project-slide-grid{grid-template-columns:1fr}.resume-project-card{padding:20px}.resume-project-slider-controls{gap:12px}}
+
+.resume-software-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}.resume-software-list li{color:var(--muted);font-size:.94rem;line-height:1.45}
