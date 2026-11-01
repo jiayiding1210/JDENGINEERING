@@ -1076,3 +1076,14 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
 @media(max-width:620px){.resume-project-slide-grid{grid-template-columns:1fr}.resume-project-card{padding:20px}.resume-project-slider-controls{gap:12px}}
 
 .resume-software-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}.resume-software-list li{color:var(--muted);font-size:.94rem;line-height:1.45}
+
+/* Homepage conference heading: align with the standard right-hand content column */
+.conference-heading-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:68px;align-items:start;margin-bottom:28px}
+.conference-heading-title{grid-column:2;text-align:left;max-width:720px}
+.conference-heading-title h2{margin-bottom:0;max-width:470px}
+@media(max-width:900px){
+  .conference-heading-grid{grid-template-columns:1fr;gap:0;margin-bottom:22px}
+  .conference-heading-spacer{display:none}
+  .conference-heading-title{grid-column:1;max-width:none}
+  .conference-heading-title h2{max-width:720px}
+}
