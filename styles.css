@@ -1087,3 +1087,13 @@ h1,h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica N
   .conference-heading-title{grid-column:1;max-width:none}
   .conference-heading-title h2{max-width:720px}
 }
+
+/* v110 — conference heading follows the same right-aligned title geometry as Core Expertise */
+#conferences .conference-heading-grid{grid-template-columns:.82fr 1.18fr;gap:64px;align-items:end;margin-bottom:30px}
+#conferences .conference-heading-title{grid-column:2;justify-self:stretch;width:100%;max-width:none;text-align:right}
+#conferences .conference-heading-title h2{max-width:620px;margin-left:auto;margin-right:0;margin-bottom:0}
+@media(max-width:900px){
+  #conferences .conference-heading-grid{grid-template-columns:1fr;gap:0;align-items:start;margin-bottom:22px}
+  #conferences .conference-heading-title{grid-column:1;text-align:left}
+  #conferences .conference-heading-title h2{max-width:720px;margin-left:0}
+}
