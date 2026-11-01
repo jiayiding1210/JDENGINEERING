@@ -90,8 +90,9 @@
 <div class="resume-project-map-heading"><p class="eyebrow">PROJECT GEOGRAPHY</p><h3>Locations of the selected projects</h3></div>
 <div class="resume-project-map-card">
 <div aria-label="Interactive map of selected project locations" class="resume-project-map-static" id="resumeProjectMap" role="region">
-<img alt="Map of the United States and southern Canada showing selected project locations" class="resume-project-map-image" src="/project-experience-map.png"/><button aria-label="Orlando, Florida" class="project-map-pin" data-location="0" style="left:85.69%;top:85.03%" title="Orlando, Florida" type="button"><span></span></button><button aria-label="Clear Creek County, Colorado" class="project-map-pin" data-location="1" style="left:44.04%;top:49.98%" title="Clear Creek County, Colorado" type="button"><span></span></button><button aria-label="Broward County, Florida" class="project-map-pin" data-location="2" style="left:87.95%;top:92.15%" title="Broward County, Florida" type="button"><span></span></button><button aria-label="Stuart, Florida" class="project-map-pin" data-location="3" style="left:89.05%;top:89.15%" title="Stuart, Florida" type="button"><span></span></button><button aria-label="Miami, Florida" class="project-map-pin" data-location="4" style="left:89.55%;top:94.10%" title="Miami, Florida" type="button"><span></span></button><button aria-label="Toronto, Ontario" class="project-map-pin" data-location="5" style="left:83.64%;top:34.51%" title="Toronto, Ontario" type="button"><span></span></button><button aria-label="New York City / Bronx, New York" class="project-map-pin" data-location="6" style="left:92.96%;top:41.07%" title="New York City / Bronx, New York" type="button"><span></span></button><button aria-label="St. Lucie County, Florida" class="project-map-pin" data-location="7" style="left:87.00%;top:87.95%" title="St. Lucie County, Florida" type="button"><span></span></button><button aria-label="Jacksonville, Florida" class="project-map-pin" data-location="8" style="left:84.61%;top:79.20%" title="Jacksonville, Florida" type="button"><span></span></button><button aria-label="Melbourne, Florida" class="project-map-pin" data-location="9" style="left:88.10%;top:85.75%" title="Melbourne, Florida" type="button"><span></span></button><button aria-label="Durham, North Carolina" class="project-map-pin" data-location="10" style="left:87.27%;top:59.28%" title="Durham, North Carolina" type="button"><span></span></button><button aria-label="Atlanta, Georgia" class="project-map-pin" data-location="11" style="left:78.90%;top:69.00%" title="Atlanta, Georgia" type="button"><span></span></button><button aria-label="Ware County, Georgia" class="project-map-pin" data-location="12" style="left:83.15%;top:76.73%" title="Ware County, Georgia" type="button"><span></span></button></div>
-<div aria-live="polite" class="resume-project-map-detail" id="resumeProjectMapDetail"><p class="eyebrow">SELECTED PROJECTS</p><div class="project-map-detail-projects"><h4>CFX SR 414 Expressway Extension</h4><h4>I-4 Ultimate P3 Project</h4></div><p class="project-map-detail-location">Orlando, Florida</p></div>
+<img alt="Map of the mainland United States and southern Canada with an enlarged Florida inset showing selected project locations" class="resume-project-map-image" src="/project-experience-map.png"/><button aria-label="Clear Creek County, Colorado" class="project-map-pin" data-location-key="clear-creek" style="left:27.598%;top:46.703%" title="Clear Creek County, Colorado" type="button"><span></span></button><button aria-label="Toronto, Ontario" class="project-map-pin" data-location-key="toronto" style="left:59.994%;top:33.975%" title="Toronto, Ontario" type="button"><span></span></button><button aria-label="New York City / Bronx, New York" class="project-map-pin" data-location-key="new-york" style="left:66.720%;top:43.366%" title="New York City / Bronx, New York" type="button"><span></span></button><button aria-label="Durham, North Carolina" class="project-map-pin" data-location-key="durham" style="left:60.592%;top:57.988%" title="Durham, North Carolina" type="button"><span></span></button><button aria-label="Atlanta, Georgia" class="project-map-pin" data-location-key="atlanta" style="left:53.821%;top:64.567%" title="Atlanta, Georgia" type="button"><span></span></button><button aria-label="Ware County, Georgia" class="project-map-pin" data-location-key="ware" style="left:56.347%;top:71.915%" title="Ware County, Georgia" type="button"><span></span></button><button aria-label="Jacksonville, Florida" class="project-map-pin" data-location-key="jacksonville" style="left:91.861%;top:55.360%" title="Jacksonville, Florida" type="button"><span></span></button><button aria-label="Orlando, Florida" class="project-map-pin" data-location-key="orlando" style="left:92.552%;top:66.293%" title="Orlando, Florida" type="button"><span></span></button><button aria-label="Melbourne, Florida" class="project-map-pin" data-location-key="melbourne" style="left:94.480%;top:69.034%" title="Melbourne, Florida" type="button"><span></span></button><button aria-label="St. Lucie County, Florida" class="project-map-pin" data-location-key="st-lucie" style="left:95.000%;top:73.252%" title="St. Lucie County, Florida" type="button"><span></span></button><button aria-label="Stuart, Florida" class="project-map-pin" data-location-key="stuart" style="left:95.368%;top:74.342%" title="Stuart, Florida" type="button"><span></span></button><button aria-label="Broward County, Florida" class="project-map-pin" data-location-key="broward" style="left:95.650%;top:80.741%" title="Broward County, Florida" type="button"><span></span></button><button aria-label="Miami, Florida" class="project-map-pin" data-location-key="miami" style="left:95.521%;top:82.856%" title="Miami, Florida" type="button"><span></span></button>
+</div>
+<div aria-live="polite" class="resume-project-map-detail" id="resumeProjectMapDetail"><p class="eyebrow">SELECTED PROJECTS</p><div class="project-map-detail-projects"><h4>I-70 Floyd Hill</h4></div><p class="project-map-detail-location">Clear Creek County, Colorado</p></div>
 </div></div>
 </div></section>
 <section class="section section-tone-b"><div class="container">
@@ -104,5 +105,51 @@
 </div></section>
 </main>
 <footer class="footer"><div class="container footer-wrap"><div><strong>Engineering by Jiayi Ding</strong><p>Bridges &amp; Structures · Design · Assessment · Maintenance · NDT · Rehabilitation</p></div></div></footer>
+<script>
+(() => {
+  const map = document.getElementById('resumeProjectMap');
+  const detail = document.getElementById('resumeProjectMapDetail');
+  if (!map || !detail) return;
+
+  const locations = {
+    "clear-creek": { location: "Clear Creek County, Colorado", projects: ["I-70 Floyd Hill"] },
+    "toronto": { location: "Toronto, Ontario", projects: ["Don Valley Crossing"] },
+    "new-york": { location: "New York City / Bronx, New York", projects: ["Queensboro & Throgs Neck Bridges", "Henry Hudson Bridge"] },
+    "durham": { location: "Durham, North Carolina", projects: ["Durham-Orange Light Rail Transit (DOLRT)"] },
+    "atlanta": { location: "Atlanta, Georgia", projects: ["I-285 East Express Lanes"] },
+    "ware": { location: "Ware County, Georgia", projects: ["State Route 4 BU/US 1 BU/US 23 BU at CSX"] },
+    "jacksonville": { location: "Jacksonville, Florida", projects: ["Main Street Bridge Rehabilitation over St. Johns River"] },
+    "orlando": { location: "Orlando, Florida", projects: ["CFX SR 414 Expressway Extension", "I-4 Ultimate P3 Project"] },
+    "melbourne": { location: "Melbourne, Florida", projects: ["Apollo Bridge Fire-Damage Evaluation and Rehabilitation"] },
+    "st-lucie": { location: "St. Lucie County, Florida", projects: ["State Road (S.R.) A1A North Causeway Over ICWW Bridge"] },
+    "stuart": { location: "Stuart, Florida", projects: ["Roosevelt Bridge Emergency Repair"] },
+    "broward": { location: "Broward County, Florida", projects: ["Sonovoid Bridge Rehabilitation Program", "Fort Lauderdale-Hollywood International Airport Terminal 5"] },
+    "miami": { location: "Miami, Florida", projects: ["I-395 Signature Bridge", "Miami International Airport People Mover Bridge Rehabilitation"] }
+  };
+
+  const pins = Array.from(map.querySelectorAll('.project-map-pin'));
+  function render(key) {
+    const item = locations[key];
+    if (!item) return;
+    pins.forEach(pin => pin.classList.toggle('active', pin.dataset.locationKey === key));
+    const heading = item.projects.length > 1 ? 'SELECTED PROJECTS' : 'SELECTED PROJECT';
+    detail.innerHTML = `<p class="eyebrow">${heading}</p><div class="project-map-detail-projects">${item.projects.map(name => `<h4>${name}</h4>`).join('')}</div><p class="project-map-detail-location">${item.location}</p>`;
+  }
+
+  map.addEventListener('click', event => {
+    const pin = event.target.closest('.project-map-pin');
+    if (!pin || !map.contains(pin)) return;
+    render(pin.dataset.locationKey);
+  });
+  map.addEventListener('keydown', event => {
+    const pin = event.target.closest('.project-map-pin');
+    if (!pin || (event.key !== 'Enter' && event.key !== ' ')) return;
+    event.preventDefault();
+    render(pin.dataset.locationKey);
+  });
+
+  render('clear-creek');
+})();
+</script>
 <script src="/script.js"></script>
 </body></html>
